@@ -31,19 +31,19 @@ public class Calculator_Main_Menu {
         scanner.nextLine();
         System.out.println("Choose what operation to use by their icons");
         String operations = scanner.nextLine();
-        if(operations=="*"){
+        if(operations.equals("*")){
             sum = multi(num1,num2);
             System.out.println(sum);
         }
-        else if(operations=="/"){
+        else if(operations.equals("/")){
             sum = divison(num1,num2);
             System.out.println(sum);
         }
-        else if(operations=="+"){
+        else if(operations.equals("+")){
             sum = add(num1,num2);
             System.out.println(sum);
         }
-        else if(operations=="-"){
+        else if(operations.equals("-")){
             sum = sub(num1,num2);
             System.out.println(sum);
         }
